@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iGUARANTEE™ | Modern Bail Carrier SaaS Platform</title>
+  <meta name="description" content="Streamlined, secure technology platform for bail carriers and their partners. Instant powers, robust audits, and real-time reporting with iGUARANTEE™." />
+  <meta property="og:title" content="iGUARANTEE™ — Empowering Carriers, Elevating Agencies" />
+  <meta property="og:description" content="Cutting-edge platform for bail carriers and their partners. Instant powers, audit-ready reporting, and secure data ownership." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#e5f0ff" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a'
+            },
+            ink: '#0f172a',
+            steel: '#94a3b8',
+            silver: '#e5e7eb',
+            accentRed: '#8F061E',   // requested brand accent
+            accentBlue: '#425B76'   // requested brand accent
+          },
+          boxShadow: {
+            soft: '0 10px 30px rgba(15, 23, 42, 0.08)'
+          },
+          backdropBlur: {
+            xs: '2px'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { color-scheme: light; }
+    .bg-silver-blue {
+      background: radial-gradient(1200px 600px at 80% -10%, rgba(59,130,246,.08), transparent 60%),
+                  radial-gradient(800px 400px at 0% 10%, rgba(148,163,184,.25), transparent 60%),
+                  linear-gradient(180deg, #ffffff 0%, #f8fafc 35%, #eef2f7 100%);
+    }
+    .glass { background: rgba(255,255,255,0.7); backdrop-filter: saturate(160%) blur(6px); }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('images/background.png') center/cover no-repeat;
+      opacity: 0.4; /* light opacity */
+      z-index: -1;
+      }
+  </style>
+</head>
+<body class="bg-silver-blue text-slate-800 antialiased">
+  <!-- Top Announcement -->
+  <div class="relative isolate">
+    <div class="hidden sm:block absolute inset-x-0 -top-20 h-40 bg-gradient-to-b from-primary-100/40 to-transparent blur-3xl"></div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#" class="flex items-center gap-3">
+          <img src="images/iglogo.png" onerror="this.style.display='none'" alt="iGUARANTEE logo" class="h-8 w-auto" />
+        </a> 
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="#features" class="hover:text-accentBlue">Features</a>
+          <a href="#why" class="hover:text-accentBlue">Why iGUARANTEE</a>
+          <a href="#testimonials" class="hover:text-accentBlue">Testimonials</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="#demo" class="inline-flex items-center justify-center rounded-xl bg-accentRed px-5 py-3 text-white font-semibold shadow-soft hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-accentBlue">Request a Demo</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+<section class="relative overflow-hidden">
+<!-- Background image overlay -->
+<div class="hero-bg"></div>
+
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28">
+<div class="grid lg:grid-cols-2 gap-10 items-center">
+<div>
+<div class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-xs text-slate-600 shadow-soft">
+<span class="inline-block h-1.5 w-1.5 rounded-full bg-accentRed"></span>
+Bail Carrier Platform — <span class="text-accentBlue">Audit-Ready</span> • <span class="text-accentRed">Secure</span> • <span class="text-accentBlue">Scalable</span>
+</div>
+<h1 class="mt-5 text-4xl sm:text-5xl font-bold leading-tight tracking-tight text-slate-900">
+<span class="text-accentRed">Empowering Carriers</span>, <span class="text-accentBlue">Elevating Agencies</span>
+</h1>
+<p class="mt-5 text-lg text-slate-700 max-w-xl">
+Bring your distribution online with a platform built for compliance and speed.
+iGUARANTEE™ delivers <span class="text-accentBlue font-semibold">instant powers</span>,
+<span class="text-accentRed font-semibold">audit-ready reporting</span>, and
+<span class="text-accentBlue font-semibold">real-time control</span> across carriers, MGAs, agencies, and agents.
+</p>
+<div class="mt-8 flex flex-wrap gap-3">
+<a href="#demo" class="inline-flex items-center justify-center rounded-xl bg-accentRed px-5 py-3 text-white font-semibold shadow-soft hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-accentBlue">Schedule a Demo</a>
+<a href="#trial" class="inline-flex items-center justify-center rounded-xl bg-accentBlue px-5 py-3 font-semibold text-white shadow-soft hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-accentRed">Start Free Trial</a>
+</div>
+<p class="mt-3 text-sm text-slate-600">Free trial available • No credit card required • White-glove onboarding</p>
+</div>
+<div class="relative flex justify-center lg:justify-end">
+<img src="images/igscreenshot.png" alt="iGUARANTEE Platform Screenshot" class="max-w-full lg:max-w-md" />
+</div>
+</div>
+</div>
+</section>
+
+  <!-- Why We Stand Out -->
+  <section id="why" class="relative py-16 sm:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-accentBlue">Why we stand out</h2>
+          <p class="mt-3 text-slate-700">
+            Skip the multi-million-dollar build. With iGUARANTEE™, carriers deploy modern, compliant tooling
+            that empowers agencies and satisfies audits—at a fraction of the time and cost.
+          </p>      
+      </div>
+
+      <div class="mt-10 grid lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-primary-50 ring-1 ring-primary-200">
+              <!-- Shield icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5 text-accentBlue"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l7 4v5a9 9 0 11-14 0V7l7-4z"/></svg>
+            </span>
+            <h3 class="text-lg font-semibold text-accentRed">Data Ownership & Security</h3>
+          </div>
+          <p class="mt-3 text-slate-700">Your data remains yours. We apply industry best practices to <span class="text-accentBlue font-medium">encrypt</span> and protect information. No hijacking, no withholding, and no <span class="text-accentRed font-medium">unusable exports</span>—always accessible in clear, processable formats.</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-primary-50 ring-1 ring-primary-200">
+              <!-- Lightning icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5 text-accentRed"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </span>
+            <h3 class="text-lg font-semibold text-accentBlue">Instant Powers</h3>
+          </div>
+          <p class="mt-3 text-slate-700">Create and manage physical or digital powers of attorney, tracking each from creation and shipping to issuance and reporting. Real‑time visibility removes uncertainty around outstanding powers and <span class="text-accentRed font-medium">liabilities</span>.</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-primary-50 ring-1 ring-primary-200">
+              <!-- Clipboard/check icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-5 w-5 text-accentBlue"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m-4-6h4a2 2 0 012 2v2h-8V4a2 2 0 012-2zM7 8h10v12a2 2 0 01-2 2H9a2 2 0 01-2-2V8z"/></svg>
+            </span>
+            <h3 class="text-lg font-semibold text-accentRed">Robust Audit Solutions</h3>
+          </div>
+          <p class="mt-3 text-slate-700">Produce documentation instantly for state audits and monitor <span class="text-accentBlue font-medium">liabilities</span>, payments, court dates, forfeitures, and more across the distribution base in real time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="relative py-16 sm:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-accentBlue">Features</h2>
+          <p class="mt-3 text-slate-700">
+            Everything carriers, MGAs, agencies, and agents need—unified in one platform designed for speed, compliance, and scale.
+          </p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Feature items -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold text-accentRed">Agency Onboarding</h3>
+          <p class="mt-2 text-slate-700">Efficiently onboard new Agents and handle contracts and appointments for a <span class="text-accentBlue">smooth transition</span> into operations.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold text-accentBlue">Power Management</h3>
+          <p class="mt-2 text-slate-700">Track powers from <span class="text-accentRed font-medium">creation</span> to <span class="text-accentBlue font-medium">issuance</span> with real‑time visibility into outstanding powers and locations.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold text-accentRed">Bond Issuance</h3>
+          <p class="mt-2 text-slate-700">Issue bonds instantly on any device using electronic or manual powers—optimized for <span class="text-accentBlue">mobile workflows</span>.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold text-accentBlue">Streamline Reporting</h3>
+          <p class="mt-2 text-slate-700">Agents, Agencies, and MGAs report powers up the distribution chain <span class="text-accentRed">without friction</span>. Auto‑report unused powers upon expiration.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold text-accentRed">Case Management</h3>
+          <p class="mt-2 text-slate-700">Collaborate on open cases across the network and communicate with agents and courts to maintain a <span class="text-accentBlue">current picture</span>.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold text-accentBlue">Forfeitures</h3>
+          <p class="mt-2 text-slate-700">All parties are notified the moment a forfeiture is created. Acknowledge, track, and process from a <span class="text-accentRed">unified workspace</span>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof / Outcomes -->
+<section class="relative py-16 sm:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-accentBlue">
+        Proven outcomes that move the needle
+      </h2>
+      <p class="mt-3 text-slate-700">
+        Carriers using iGUARANTEE™ cut audit prep from weeks to hours, gain live visibility into liabilities,
+        and keep full ownership of their data—no lock-in, no compromises.
+      </p>
+    </div>
+
+    <div class="mt-10 grid lg:grid-cols-3 gap-6">
+      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+        <h3 class="text-lg font-semibold text-accentBlue">Weeks → Hours</h3>
+        <p class="mt-2 text-slate-700">
+          State audit documentation generated instantly. Teams reallocate time from paperwork to growth.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+        <h3 class="text-lg font-semibold text-accentRed">Live Liability View</h3>
+        <p class="mt-2 text-slate-700">
+          Know outstanding powers, locations, and exposure in real time—no more spreadsheet chases.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+        <h3 class="text-lg font-semibold text-accentBlue">Data You Control</h3>
+        <p class="mt-2 text-slate-700">
+          Export, integrate, and analyze without vendor lock-in. Your data stays accessible and secure.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="relative py-16 sm:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-accentBlue">What carriers & agencies say</h2>
+      </div>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <figure class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <blockquote class="text-slate-800">“We love iGUARANTEE™ because it is easy to use, looks beautiful, and bonds are issued quickly without any issues or need to re‑key any data, and I have a full audit trail for each power.”</blockquote>
+          <figcaption class="mt-4 text-sm text-slate-600">— Mark</figcaption>
+        </figure>
+        <figure class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <blockquote class="text-slate-800">“iGUARANTEE™ has done an outstanding job to develop a powerful, robust, and beautiful bail bonds software platform. It is impressive what they have developed by listening and truly understanding our needs.”</blockquote>
+          <figcaption class="mt-4 text-sm text-slate-600">— Scott Willis</figcaption>
+        </figure>
+        <figure class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <blockquote class="text-slate-800">“The iGUARANTEE™ platform is so easy and straightforward to use that there is zero lag time to figure out how to use it at every level, Carrier, MGA, Agency, or Agent.”</blockquote>
+          <figcaption class="mt-4 text-sm text-slate-600">— Donnie Mescia</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo / Trial CTA -->
+  <section id="demo" class="relative py-16 sm:py-24">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl border border-slate-200 bg-white/80 shadow-soft p-8 sm:p-12">
+        <div class="grid md:grid-cols-2 gap-10 items-start">
+          <div>
+            <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">
+              See iGUARANTEE™ in action then start your <span class="text-accentRed">free trial</span>
+            </h3>
+            <p class="mt-3 text-slate-700">See how iGUARANTEE™ streamlines powers, audits, and reporting in one seamless experience. Start with a guided walkthrough; move into a sandbox or pilot environment with a <span class="text-accentBlue font-medium">free trial</span>.</p>
+            <ul class="mt-6 space-y-2 text-slate-700 list-disc pl-5">
+              <li><span class="text-accentBlue">White‑glove onboarding</span> for carriers and MGAs</li>
+              <li>Secure data ownership & <span class="text-accentRed">compliant exports</span></li>
+              <li>Mobile‑first issuance from courthouse or jail</li>
+            </ul>
+          </div>
+          <form id="trial" class="space-y-4" onsubmit="event.preventDefault(); alert('Thanks! We\'ll get in touch shortly.');">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-slate-700">First Name*</label>
+                <input required type="text" class="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accentBlue" placeholder="Jane" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-slate-700">Last Name*</label>
+                <input required type="text" class="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accentBlue" placeholder="Doe" />
+              </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-slate-700">Phone Number*</label>
+                <input required type="tel" class="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accentBlue" placeholder="(555) 123‑4567" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-slate-700">Email*</label>
+                <input required type="email" class="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accentBlue" placeholder="you@company.com" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-700">Message*</label>
+              <textarea required rows="4" class="mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-accentBlue" placeholder="Tell us about your organization and needs..."></textarea>
+            </div>
+            <div class="flex flex-wrap items-center gap-3">
+              <button type="submit" class="inline-flex items-center justify-center rounded-xl bg-accentRed px-5 py-3 text-white font-semibold shadow-soft hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-accentBlue">Request Demo</button>
+              <a href="#" class="text-sm text-slate-600 hover:text-accentBlue">Prefer email? sales@iguarantee.com</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <img src="images/iglogo.png" onerror="this.style.display='none'" alt="iGUARANTEE logo" class="h-7 w-auto" />
+        </div>
+        <nav class="text-sm text-slate-600 flex gap-6">
+          <a href="#features" class="hover:text-accentBlue">Features</a>
+          <a href="#demo" class="hover:text-accentBlue">Demo</a>
+          <a href="#" class="hover:text-accentBlue">Privacy</a>
+          <a href="#" class="hover:text-accentBlue">Terms</a>
+        </nav>
+      </div>
+      <p class="mt-6 text-xs text-slate-500">Copyright © 2025, iGUARANTEE™. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
